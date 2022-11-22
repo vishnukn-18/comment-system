@@ -1,0 +1,53 @@
+<div class="total">
+ <div class="commentsystem">
+  <div class="container">
+   <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+     <form [formGroup]="signupForm" (ngSubmit)="onSubmit()"> 
+      <div id="user-data">
+       <div class="form-group">
+        <label for="username">Name</label>
+        <input type="text" id="name" class="form-control" formControlName="name">
+        <div *ngIf="!signupForm.get('name')?.valid && signupForm.get('name')?.touched" class="alert alert-danger">
+         Please Enter the Name</div>
+        </div>
+        <div class="form-group">
+         <label for="password">Comment</label>
+         <input type="comment" id="comment" class="form-control commentlabel" formControlName="comment">
+         <div *ngIf="!signupForm.get('comment')?.valid && signupForm.get('comment')?.touched" class="alert alert-danger">
+          Comment Should not be Empty</div>
+          
+         </div>
+        </div>
+        
+        <button [disabled]="signupForm.invalid" class="btn btn-primary" type="submit">Add Comment</button>
+        <button class=" btn btn-primary logout"  (click)="logout()">LogOut</button>
+       </form>
+      </div>
+ </div>
+</div>
+</div>
+<div class="comment">
+ <header>Commnet Box</header>
+ <div class="c" *ngFor="let name of total3; let i=index ">
+ <div class="commenterImage ">
+ <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"/>
+</div>
+<div class="tota ">
+ <p>{{name.user}}</p>
+  <div class="input-group total4">
+   <textarea class="form-control edittext" aria-label="With textarea"disabled >{{name.pass}}</textarea>
+  </div>
+ <button class=" btn-primary replay-button" (click)="editcomment(i)">Edit</button>
+ <button class=" btn-primary replay-button" (click)="replaycomment()">Replay</button>
+ <h6 class="time">{{name.time}}</h6>
+<div class="input-group input-group-lg last" *ngIf="replied">
+<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+</div>
+
+
+</div>
+</div>
+
+</div>
+</div>

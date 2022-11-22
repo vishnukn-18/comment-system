@@ -1,0 +1,102 @@
+.commentsystem,
+.comment {
+  border: 2px solid black;
+  margin-top: 30px;
+  width: 400px;
+  height: 600px;
+  margin-left: 20px;
+}
+
+.btn {
+  margin-top: 20px;
+}
+.row {
+  display: grid;
+  place-items: center;
+  margin-top: 30%;
+}
+.comment {
+  width: 69%;
+  overflow: scroll;
+}
+.total {
+  display: flex;
+  gap: 10px;
+}
+.commentlabel
+{
+ height: 100px;
+}
+header{
+ background-color: coral;
+ display: grid;
+ place-items: center;
+ padding: 10px;
+}
+label{
+ font-weight: bold;
+}
+img{
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ 
+}
+.commenterImage {
+    width:30px;
+    margin-right:5px;
+    float:left;
+    display: flex;
+    gap: 20px;
+}
+.c
+{
+ display: flex;
+ gap: 20px;
+}
+/* .tota
+{
+ margin-top: 8px;
+} */
+p
+{
+ font-weight: bold;
+ color: cornflowerblue;
+ font-size: 25px;
+ margin-bottom: 6px;
+}
+.total4
+{
+ 
+ width: 500px;
+ padding: 4px;
+ height: 100px;
+ margin-bottom:2px
+}
+.replay-button
+{
+ margin-bottom: 4px;
+ margin-left: 4px;
+}
+.logout
+{
+ margin-top: 4px;
+}
+header{
+ font-weight: bold;
+}
+.logout{
+ display: block;
+ width: 129px;
+ margin-top: 4px;
+ height: 35px;
+ padding: 4px;
+
+}
+.rep
+{
+ display: none;
+}
+.per{
+ display: show;
+}
